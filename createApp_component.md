@@ -1,4 +1,4 @@
-# 02. createApp()과 Component
+# createApp() and Component
 
 
 ## createApp()

@@ -1,7 +1,5 @@
-# 01. 시작하기
+# 시작하기
 
-> [출처]
->
 > * [Quick Start | Vue.js](https://vuejs.org/guide/quick-start.html#using-vue-from-cdn)
 
 ## CDN 방식
@@ -34,33 +32,6 @@
 
 <script type="module">
   import { createApp, ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
-
-  createApp({
-    setup() {
-      const message = ref('Hello Vue!')
-      return {
-        message
-      }
-    }
-  }).mount('#app')
-</script>
-```
-
-### Enabling Import maps
-
-```html
-<script type="importmap">
-  {
-    "imports": {
-      "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
-    }
-  }
-</script>
-
-<div id="app">{{ message }}</div>
-
-<script type="module">
-  import { createApp, ref } from 'vue'
 
   createApp({
     setup() {
