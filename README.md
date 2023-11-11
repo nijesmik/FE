@@ -7,3 +7,4 @@
 ## 03. Composition API
 
 * [computed()](./composition_api/computed.md)
+* [watch()](./composition_api/watch.md)
