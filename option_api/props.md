@@ -1,0 +1,73 @@
+# Props
+> [Components Basics | Vue.js](https://vuejs.org/guide/essentials/component-basics.html#passing-props) <br>
+> [Props | Vue.js](https://vuejs.org/guide/components/props.html#props)
+
+## Props Declaration
+
+Props are **custom attributes you can register on a component**. To pass a title to our blog post component, we must declare it in the list of props this component accepts, using the `defineProps` macro:
+
+```html
+<!-- BlogPost.vue -->
+<script setup>
+defineProps(['title'])
+</script>
+
+<template>
+  <h4>{{ title }}</h4>
+</template>
+```
+
+In addition to declaring props using an array of strings, we can also use the object syntax:
+
+```js
+// in <script setup>
+defineProps({
+  title: String,
+  likes: Number
+})
+```
+
+For each property in the object declaration syntax, the key is the name of the prop, while the value should be the constructor function of the expected type.
+
+This not only documents your component, but will also warn other developers using your component in the browser console if they pass the wrong type.
+
+### defineProps
+
+`defineProps` is a compile-time macro that is only available inside `<script setup>` and **does not need to be explicitly imported**. Declared props are automatically exposed to the template. defineProps also returns an object that contains all the props passed to the component, so that we can access them in JavaScript if needed:
+
+```js
+const props = defineProps(['title'])
+console.log(props.title)
+```
+
+## Passing Props
+
+Once a prop is registered, you can pass data to it as a custom attribute, like this:
+
+```html
+<BlogPost title="My journey with Vue" />
+<BlogPost title="Blogging with Vue" />
+<BlogPost title="Why Vue is so fun" />
+```
+
+## Prop Name Casing​
+
+We declare long prop names using **camelCase** because this avoids having to use quotes when using them as property keys, and allows us to reference them directly in template expressions because they are valid JavaScript identifiers:
+
+```js
+defineProps({
+  greetingMessage: String
+})
+```
+
+```html
+<span>{{ greetingMessage }}</span>
+```
+
+Technically, you can also use camelCase **when passing props to a child component** (except in in-DOM templates). However, the convention is using **kebab-case** in all cases to align with HTML attributes:
+
+```html
+<MyComponent greeting-message="hello" />
+```
+
+We use **PascalCase for component tags** when possible because it improves template readability by differentiating Vue components from native elements. However, there isn't as much practical benefit in using camelCase when passing props, so we choose to follow each language's conventions.

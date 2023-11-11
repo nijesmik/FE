@@ -8,3 +8,7 @@
 
 * [computed()](./composition_api/computed.md)
 * [watch()](./composition_api/watch.md)
+
+## 04. Option API
+
+* [props](./option_api/props.md)
