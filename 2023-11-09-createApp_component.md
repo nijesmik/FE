@@ -3,8 +3,8 @@
 
 ## createApp()
 
-> * [Creating a Vue Application | Vue.js](https://vuejs.org/guide/essentials/application.html#the-application-instance) <br>
-> * [Application API | Vue.js](https://vuejs.org/api/application.html#createapp)
+> [Creating a Vue Application | Vue.js](https://vuejs.org/guide/essentials/application.html#the-application-instance) <br>
+> [Application API | Vue.js](https://vuejs.org/api/application.html#createapp)
 
 Every Vue application starts by creating a new **application instance** with the `createApp` function:
 
