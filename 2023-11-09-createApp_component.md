@@ -3,8 +3,8 @@
 
 ## createApp()
 
-> * [Creating a Vue Application | Vue.js](https://vuejs.org/guide/essentials/application.html#the-application-instance) <br>
-> * [Application API | Vue.js](https://vuejs.org/api/application.html#createapp)
+> [Creating a Vue Application | Vue.js](https://vuejs.org/guide/essentials/application.html#the-application-instance) <br>
+> [Application API | Vue.js](https://vuejs.org/api/application.html#createapp)
 
 Every Vue application starts by creating a new **application instance** with the `createApp` function:
 
@@ -29,8 +29,8 @@ function createApp(rootComponent: Component, rootProps?: object): App
 
 ## Root Component
 
-> * [Creating a Vue Application | Vue.js](https://vuejs.org/guide/essentials/application.html#the-root-component)
-> * [Components Basics | Vue.js](https://vuejs.org/guide/essentials/component-basics.html)
+> [Creating a Vue Application | Vue.js](https://vuejs.org/guide/essentials/application.html#the-root-component) <br>
+> [Components Basics | Vue.js](https://vuejs.org/guide/essentials/component-basics.html)
 
 The object we are passing into `createApp` is in fact a component. Every `app` requires a **root component** that can contain other components as its children.
 
@@ -40,7 +40,7 @@ The object we are passing into `createApp` is in fact a component. Every `app` r
 
 ## Component
 
-> * [Glossary | Vue.js](https://vuejs.org/glossary/#component)
+> [Glossary | Vue.js](https://vuejs.org/glossary/#component)
 
 It describes **a chunk of the UI**, such as a button or checkbox. Components can also be combined to form larger components.
 
