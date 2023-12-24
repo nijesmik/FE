@@ -1,6 +1,7 @@
 # Getting Started
 
-> [Quick Start | Vue.js](https://vuejs.org/guide/quick-start.html#using-vue-from-cdn)
+> [Quick Start | Vue.js](https://vuejs.org/guide/quick-start.html)
+> [Single-File Components | Vue.js](https://vuejs.org/guide/scaling-up/sfc.html)
 
 ## Creating a Vue Application
 
