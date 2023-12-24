@@ -1,6 +1,16 @@
-# Add Vuetify to an existing project
+---
+title: "[Vuetify] Installation"
+author: nijesmik
+date: 2023-12-16 00:00
+categories: [Vue]
+tag: [Vue, Vuetify]
+---
 
+## Add Vuetify to an existing project
+
+> **출처** <br>
 > [Get started with Vuetify 3 — Vuetify](https://vuetifyjs.com/en/getting-started/installation/#existing-projects)
+{: .prompt-info }
 
 1.
 

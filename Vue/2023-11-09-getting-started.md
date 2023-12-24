@@ -1,7 +1,15 @@
-# Getting Started
+---
+title: "[Vue] Getting Started"
+author: nijesmik
+date: 2023-11-09
+categories: [Vue]
+tag: [Vue]
+---
 
+> **출처** <br>
 > [Quick Start | Vue.js](https://vuejs.org/guide/quick-start.html)
 > [Single-File Components | Vue.js](https://vuejs.org/guide/scaling-up/sfc.html)
+{: .prompt-info }
 
 ## Creating a Vue Application
 
